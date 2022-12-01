@@ -558,6 +558,12 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .portfolio-wrap img {
+  max-height: 400px;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -573,16 +579,19 @@ section {
   opacity: 0;
 }
 
-.portfolio .portfolio-wrap .portfolio-links {
+.portfolio .portfolio-wrap .portfolio-name {
   opacity: 1;
   left: 0;
   right: 0;
   bottom: -60px;
   z-index: 3;
+  background-color: rgba(20, 157, 221, 0.75); /* TODO use variable for color */
+  color: #fff;
   position: absolute;
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
+  padding: 5px 10px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
@@ -610,7 +619,7 @@ section {
   opacity: 1;
 }
 
-.portfolio .portfolio-wrap:hover .portfolio-links {
+.portfolio .portfolio-wrap:hover .portfolio-name {
   opacity: 1;
   bottom: 0;
 }

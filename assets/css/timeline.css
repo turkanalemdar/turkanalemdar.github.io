@@ -141,10 +141,12 @@
 
 .main-timeline .date {
     width: 100%;
+    height: 100%;
     margin: auto;
-    position: absolute;
-    top: 27%;
-    left: 0
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
 
 .main-timeline .month {

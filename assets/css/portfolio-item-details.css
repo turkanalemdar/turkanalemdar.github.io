@@ -1,0 +1,12 @@
+.portfolio-item-details {
+    max-width: 900px;
+    margin: auto;
+}
+
+.portfolio-item-detail-section {
+    margin-top: 3.5rem;
+}
+
+.portfolio-item-detail-section, h4 {
+    color: #343a40;
+}

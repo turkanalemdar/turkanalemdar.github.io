@@ -1,0 +1,28 @@
+:root {
+    --sa-active: #0FC2C0;
+    --sa-active-75: rgba(15, 194, 192, 0.75);
+    --sa-body: #272829;
+    --sa-hover: #0c9b9a;
+    --sa-title: #023535;
+    --sa-light-bg: #cff3f2;
+    --sa-nav-bg: #040b14;
+    --sa-social-btn-bg: #212431;
+
+    /* Timeline */
+    --sa-timeline-1: #cad6d8;
+    --sa-timeline-2: #023535;
+
+
+    /* Originals
+    --sa-active: #149ddd;
+    --sa-active-75: rgba(20, 157, 221, 0.75);
+    --sa-body: #272829;
+    --sa-hover: #37b3ed;
+    --sa-title: #173b6c;
+    --sa-light-bg: #dff3fc;
+    --sa-nav-bg: #040b14;
+    --sa-social-btn-bg: #212431; 
+    --sa-timeline-1: #c6c6c6;
+    --sa-timeline-2: #232323;
+    */
+}

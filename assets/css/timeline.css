@@ -26,7 +26,7 @@
     clear: both
 }
 
-.main-timeline .icon {
+/* .main-timeline .icon {
     width: 18px;
     height: 18px;
     line-height: 18px;
@@ -67,7 +67,7 @@
 
 .main-timeline .timeline:hover .icon:after {
     left: -3px
-}
+} */
 
 .main-timeline .date-content {
     width: 50%;
@@ -78,14 +78,14 @@
 
 .main-timeline .date-content:before {
     content: "";
-    width: 36.5%;
+    width: calc(50% - 65px);
     height: 2px;
     background: #c6c6c6;
     margin: auto 0;
     position: absolute;
     top: 0;
-    right: 10px;
-    bottom: 0
+    right: 0;
+    bottom: 0;
 }
 
 .main-timeline .date-outer {
@@ -108,11 +108,16 @@
     top: 0;
     left: 0;
     right: 0;
+}
+
+.main-timeline .date-content:before ,
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
     transition: all 0.33s ease-out 0s
 }
 
 .main-timeline .date-outer:before {
-    background: #fff;
+    /* background: #fff; */
     border: 2px solid #232323;
     left: -6px
 }
@@ -128,6 +133,10 @@
 
 .main-timeline .timeline:hover .date-outer:after {
     left: -6px
+}
+
+.main-timeline .timeline:hover .date-content:before {
+    width: calc(50% - 58px);
 }
 
 .main-timeline .date {
@@ -173,7 +182,12 @@
 }
 
 .main-timeline .timeline:nth-child(2n) .date-content:before {
-    left: 10px
+    left: 0px;
+    width: calc(50% - 58px);
+}
+
+.main-timeline .timeline:nth-child(2n):hover .date-content:before {
+    width: calc(50% - 65px);
 }
 
 .main-timeline .timeline:nth-child(2n) .timeline-content {
@@ -201,8 +215,10 @@
 
 @media only screen and (max-width: 767px) {
     .main-timeline:before {
-        margin: 0;
-        left: 7px
+        /* margin: 0;
+        left: 7px; */
+        display: none;
+        visibility: hidden;
     }
     .main-timeline .timeline {
         margin-bottom: 20px
@@ -238,11 +254,16 @@
     }
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(2n) .timeline-content {
-        width: 95%;
+        width: 100%;
         text-align: center;
         padding: 10px 0
     }
     .main-timeline .title {
         margin-bottom: 10px
+    }
+    .main-timeline .icon,
+    .main-timeline .icon:before,
+    .main-timeline .icon:after {
+        display: none;
     }
 }

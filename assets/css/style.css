@@ -34,6 +34,17 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.btn-sa {
+  color: var(--sa-active);
+  border-color: var(--sa-active);
+  transition: 0.3s;
+}
+
+.btn-sa:hover {
+  background-color: var(--sa-active);
+  border-color: var(--sa-active);
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/

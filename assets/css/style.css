@@ -40,6 +40,18 @@ h6 {
   transition: 0.3s;
 }
 
+.btn-sa.btn-primary {
+  background-color: var(--sa-active);
+}
+
+.btn-sa.btn-primary {
+  color: #fff;
+}
+
+.btn-sa.btn-primary:hover {
+  background-color: var(--sa-active-75);
+}
+
 .btn-sa:hover {
   background-color: var(--sa-active);
   border-color: var(--sa-active);

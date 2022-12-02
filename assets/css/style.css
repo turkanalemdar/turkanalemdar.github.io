@@ -49,12 +49,13 @@ h6 {
 }
 
 .btn-sa.btn-primary:hover {
-  background-color: var(--sa-active-75);
+  background-color: var(--sa-active-75) !important;
 }
 
-.btn-sa:hover {
-  background-color: var(--sa-active);
-  border-color: var(--sa-active);
+.btn-sa:hover, .btn-sa:active {
+  background-color: var(--sa-active) !important;
+  border-color: var(--sa-active) !important;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------

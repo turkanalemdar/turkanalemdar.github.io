@@ -52,7 +52,8 @@ h6 {
   background-color: var(--sa-active-75) !important;
 }
 
-.btn-sa:hover, .btn-sa:active {
+.btn-sa:hover,
+.btn-sa:active {
   background-color: var(--sa-active) !important;
   border-color: var(--sa-active) !important;
   color: #fff;
@@ -259,7 +260,8 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bg.jpg");
+  background-position: top right -50px;
   background-size: cover;
 }
 
@@ -302,13 +304,14 @@ h6 {
   border-bottom: 3px solid var(--sa-active);
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
-}
+} */
 
 @media (max-width: 768px) {
+
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -318,6 +321,12 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #hero {
+    background-position: top right -255px;
   }
 }
 
@@ -450,14 +459,14 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
-.skills .img-container{
+.skills .img-container {
   height: 2rem;
   width: 2rem;
   text-align: center;
   margin-right: .5rem;
 }
 
-.skills .img-container img{
+.skills .img-container img {
   max-height: 100%;
   width: auto;
 }
